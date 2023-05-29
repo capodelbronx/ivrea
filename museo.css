@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    background-image: url("img/giornale.jpg");
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  h2 {
+    scroll-margin-top: 60px;
+  }
+
+  .container {
+    padding-top: 60px;
+  }
+
+
+  nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 20px;
+    padding: 25px;
+    font-weight: bold;
+  }
+
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  body {
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+ /* Responsività per schermi grandi */
+@media screen and (min-width: 769px) {
+  header {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  nav a {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+/* Responsività per schermi piccoli */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding-right: 0 ;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 2001px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+}

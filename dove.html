@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dove.css">
+    <title>Storia di Ivrea</title>
+    
+</head>
+<body>
+    <header> 
+    
+        <h1>Benvenuti a Ivrea</h1>
+       
+        <h2 class="section-title"></h2>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contatti.html">CONTATTI</a></li>
+            <li><a href="dove.html">DOVE SIAMO</a></li>
+            <li><a href="museo.html">MUSEO</a></li>
+        </ul>
+    </header>
+
+    <main>    
+        <div class="logo">
+            <img src="img/Ivrea-Stemma.png" alt="">
+        </div>
+
+        <div class="posizione">
+            <img src="img/posizione.png" alt="">
+        </div>
+        <section>
+            <h2>Informazioni su Ivrea</h2>
+            <p>Ivrea è una città situata nella regione del Piemonte, in Italia. La sua storia risale all'epoca romana, quando la zona era abitata dagli antichi Celti. Nel corso dei secoli, Ivrea è stata influenzata da diverse dominazioni, tra cui quella dei Longobardi, dei Franchi e dei Savoia.</p>
+            <div class="immagine">
+                <img src="img/Uffi.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>Medioevo e Rinascimento</h2>
+            <p>Durante il Medioevo, Ivrea divenne una città fortificata e un importante centro politico ed economico. È stata la sede di una signoria e, successivamente, di un ducato. Durante il Rinascimento, la città ha sperimentato un periodo di prosperità economica e culturale.</p>
+            <div class="immagine">
+                <img src="img/medioevo.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>La Battaglia delle Arance</h2>
+            <p>Tuttavia, uno degli episodi più noti della storia di Ivrea è la celebre "Battaglia delle Arance". Questa tradizione unica ha inizio nel XIX secolo e coinvolge la popolazione locale che si divide in squadre per lanciarsi arance durante un evento chiamato "Storico Carnevale di Ivrea". Questa manifestazione richiama visitatori da tutto il mondo ed è diventata un simbolo distintivo della città.</p>
+            <div class="immagine">
+                <img src="img/battaglia-arance.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>Centro industriale e trasformazione</h2>
+            <p>Oltre alla sua storia ricca di eventi e tradizioni, Ivrea è nota anche per essere stata un importante centro industriale nel XX secolo, soprattutto nell'ambito dell'industria automobilistica. Tuttavia, negli ultimi decenni, la città ha affrontato una trasformazione economica e ha puntato sempre più sul turismo e sullo sviluppo di settori come la tecnologia e l'innovazione.</p>
+            <div class="immagine">
+                <img src="img/indrustriale.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>Ivrea oggi</h2>
+            <p>Oggi, Ivrea è riconosciuta come Patrimonio dell'Umanità dall'UNESCO grazie alla sua architettura industriale del XX secolo, nota come "Ivrea Industrial City of the 20th Century". La città è un mix affascinante di storia, cultura, natura e innovazione, attirando visitatori per la sua bellezza e il suo patrimonio unico.</p>
+            <div class="immagine">
+                <img src="img/oggi.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Storia di Ivrea. Tutti i diritti riservati</p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var immagini = document.querySelectorAll('.immagine img');
+            immagini.forEach(function(img) {
+                img.classList.add('visible');
+            });
+        });
+    </script>
+
+    
+  
+</body>
+</html>

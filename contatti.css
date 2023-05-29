@@ -1,0 +1,204 @@
+body {
+    opacity: 0;
+    transition: opacity 3s ease;
+  }
+  
+  .animate-enter {
+    opacity: 1 !important;
+  }
+  
+  /* Stili per schermi di dimensioni ridotte */
+@media screen and (max-width: 600px) {
+  /* Stili per schermi fino a 600px di larghezza */
+
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* Stili per schermi di dimensioni medie */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Stili per schermi tra 601px e 1024px di larghezza */
+
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* Stili per schermi di dimensioni grandi */
+@media screen and (min-width: 1025px) {
+  /* Stili per schermi superiori a 1024px di larghezza */
+
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 30px;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+header {
+    
+  background-image: url("img/background.jpeg");
+  padding: 20px;
+}
+
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),url("img/contatti.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+li{
+  font-weight: bold;
+  color: #FFF;
+}
+
+
+h2.section-title {
+  float: left; /* Allinea il titolo a sinistra */
+  margin-right: 20px; /* Aggiunge margine a destra per separarlo dal menu */
+}
+
+header h1,
+h2.section-title {
+opacity: 0;
+transform: translateY(-20px);
+transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+header h1.animate,
+h2.section-title.animate {
+opacity: 1;
+transform: translateY(0);
+}
+
+ul.menu {
+  float: right; /* Allinea il menu a destra */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease; 
+}
+
+ul.menu li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul.menu li a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
