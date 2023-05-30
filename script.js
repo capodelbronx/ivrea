@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var heroContent = document.querySelector(".hero__content");
     var welcome = document.querySelector(".welcome");
@@ -14,4 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
       heroContent.classList.add("visible");
     });
   });
-  
+
+  function replaceLogoOnSmallScreen() {
+    const logoImage = document.getElementById("logo-image");
+    if (window.innerWidth < 430) {
+        logoImage.src = "img/olivetti400.png";
+    }
+}
+

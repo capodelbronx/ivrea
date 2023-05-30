@@ -1,10 +1,7 @@
-/* DOVE SIAMO  */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 header {
@@ -12,6 +9,7 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 h1 {
     color: #fff;
 }
@@ -48,19 +46,16 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  }
-  
-  
+}
 
-
-/*  MENU */
+/* MENU */
 h2.section-title {
-    float: left; /* Allinea il titolo a sinistra */
-    margin-right: 20px; /* Aggiunge margine a destra per separarlo dal menu */
+    float: left;
+    margin-right: 20px;
 }
 
 ul.menu {
-    float: right; /* Allinea il menu a destra */
+    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -84,19 +79,17 @@ ul.menu li a:hover {
     transform: scale(1.1);
 }
 
-
 .logo {
     position: absolute;
     left: 0;
-  }
-  
-  .posizione {
+}
+
+.posizione {
     position: absolute;
     right: 0;
+}
 
-  }
-
-  .immagine img {
+.immagine img {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -112,11 +105,9 @@ ul.menu li a:hover {
 .immagine:hover img.visible {
     opacity: 0.7;
 }
-  
-/* RESPONSIVITY */
 
+/* RESPONSIVITY */
 @media screen and (max-width: 768px) {
-  
     h2.section-title {
         float: none;
         margin-right: 0;
@@ -137,16 +128,14 @@ ul.menu li a:hover {
     main {
         padding: 0 10px;
     }
+
     .logo,
     .posizione {
-      display: none;
+        display: none;
     }
-    
-
 }
 
 @media screen and (max-width: 480px) {
-
     h2.section-title,
     ul.menu {
         text-align: center;
@@ -161,20 +150,16 @@ ul.menu li a:hover {
     main {
         padding: 0 10px;
     }
-    .logo,
-    .posizione {
-      display: none;
-    }
-}
-
-@media screen and (max-width: 1525px){
 
     .logo,
     .posizione {
-      display: none;
+        display: none;
     }
 }
-  
 
-
-
+@media screen and (max-width: 1525px) {
+    .logo,
+    .posizione {
+        display: none;
+    }
+}

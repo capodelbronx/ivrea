@@ -1,180 +1,279 @@
+/* Reset dei margini e dei padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile del body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-    background-image: url("img/giornale.jpg");
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
 
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+/* Stile dell'header */
+header {
+  background-color: #2d3035;
+  padding: 20px;
+  color: #fff;
+}
 
+/* Stile del titolo */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Stile del sottotitolo */
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Stile del paragrafo */
+p {
+  margin-bottom: 15px;
+}
+
+/* Stile dei link */
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+/* Stile del link visitato */
+a:visited {
+  color: #337ab7;
+}
+
+/* Stile del link al passaggio del mouse */
+a:hover {
+  color: #23527c;
+}
+
+/* Stile della barra di navigazione */
+nav {
+  background-color: #2d3035;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Stile dei link nella barra di navigazione */
+nav a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* Stile del contenitore principale */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile dell'immagine */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Stile del footer */
+footer {
+  background-color: #2d3035;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Stile del campo di input per la ricerca */
+.search-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Stile dell'icona di ricerca */
+.search-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+/* Stile dell'icona di ricerca attiva */
+.search-button.active {
+  background-color: yellow;
+  color: #000;
+}
+
+/* Stile del testo evidenziato */
+.highlight {
+  background-color: yellow;
+}
+
+/* Media query per dispositivi mobili */
+@media screen and (max-width: 600px) {
   h1 {
-    font-size: 36px;
-    margin: 0;
-  }
-
-  h2 {
-    scroll-margin-top: 60px;
-  }
-
-  .container {
-    padding-top: 60px;
-  }
-
-
-  nav {
-    background-color: #555;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    color: #FFF;
-    font-size: 20px;
-    padding: 25px;
-    font-weight: bold;
-  }
-
-  .fixed-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    transition: top 0.3s ease-in-out;
-  }
-
-  nav a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-
-  h2 {
     font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  img {
     margin-bottom: 10px;
   }
 
-  p {
-    margin-bottom: 15px;
-  }
-
   footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
   }
+
+  /* Stile generale del body */
   body {
-  
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
   }
 
- /* Responsività per schermi grandi */
-@media screen and (min-width: 769px) {
+  /* Header */
   header {
-    padding: 30px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  h1 {
-    font-size: 48px;
+  header .search-container {
+    display: flex;
+    align-items: center;
   }
 
+  header #search-input {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  header .search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  /* Navigation */
   nav {
-    padding: 20px;
+    background-color: #007bff;
+    padding: 10px;
   }
 
   nav a {
-    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
   }
 
+  /* Container principale */
   .container {
-    padding: 40px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  h2 {
-    font-size: 36px;
+  /* Titoli */
+  h1, h2 {
+    color: #007bff;
+    margin-bottom: 10px;
   }
 
-  p {
+  /* Immagini */
+  .immagine {
     margin-bottom: 20px;
   }
 
-  footer {
-    padding: 20px;
-    font-size: 16px;
-  }
-}
-
-/* Responsività per schermi piccoli */
-@media screen and (max-width: 768px) {
-  header {
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  nav {
-    padding: 10px;
-  }
-
-  nav a {
-    padding: 15px;
-    font-size: 16px;
-  }
-
-  .container {
+  .immagine img {
     max-width: 100%;
-    padding-right: 0 ;
-  }
-  h2 {
-    font-size: 20px;
   }
 
+  /* Paragrafi */
   p {
     margin-bottom: 10px;
   }
 
+  /* Footer */
   footer {
+    background-color: #f0f0f0;
     padding: 10px;
+    text-align: center;
     font-size: 12px;
+    color: #777;
   }
 }
-@media screen and (min-width: 2001px) {
-  body {
-    font-size: 20px;
-  }
-
+@media screen and (max-width: 768px) {
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px;
   }
-
-  h2 {
-    font-size: 28px;
+  
+  header .search-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  p {
-    line-height: 1.8;
+  
+  header #search-input {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  header .search-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    margin-bottom: 10px;
   }
 }
